@@ -17,6 +17,8 @@ In many water storage systems, pumps and filling valves are operated manually, w
 - Selonoid valve
 - Power supply
 ### System Diagram
+<img width="1293" height="788" alt="control-diagram" src="https://github.com/user-attachments/assets/03ba2a28-5ce2-4d33-b44d-8a90b9b80fdf" />
 ### Project Structure
+
 ### Future Improvements
 ### Author
