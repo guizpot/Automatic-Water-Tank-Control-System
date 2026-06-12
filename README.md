@@ -15,7 +15,7 @@ In many water storage systems, pumps and filling valves are operated manually, w
 - ESP32 Dev Module
 - Water Level Sensor
 - Water pump
-- Selonoid valve
+- Solonoid valve
 - Power supply
 
 ### System Diagram
@@ -67,6 +67,17 @@ The program is based on a simple state-control strategy.
 - LCD display
 - Data logging
 
+## Results
+
+The system successfully:
+- Monitors water level conditions.
+- Prevents pump dry-running.
+- Controls the filling process automatically.
+- Allows manual START and STOP control.
+- 
 ### Author
 Miguel A. Hernandez
-UTP Mechatronic Enginnering Student
+
+Mechatronics Engineering Student
+
+Universidad Tecnológica de Pereira
