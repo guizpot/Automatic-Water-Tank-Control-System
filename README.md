@@ -21,18 +21,42 @@ In many water storage systems, pumps and filling valves are operated manually, w
 ### System Diagram
 <img width="1293" height="788" alt="control-diagram" src="https://github.com/user-attachments/assets/03ba2a28-5ce2-4d33-b44d-8a90b9b80fdf" />
 
-## Control Logic
+## Software Logic
 
-The system uses a water level sensor to determine whether the tank is full or empty.
+The program is based on a simple state-control strategy.
 
-- LOW level → Solenoid valve opens and pump stops.
-- HIGH level → Solenoid valve closes and pump can operate.
-- STOP button → Pump disabled.
-- START button → Pump enabled if water level is sufficient.
+### Inputs
+
+| Input | Description |
+
+| START button | Enables the system |
+
+| STOP button | Disables the system |
+
+| Water level sensor | Detects low or high water level |
+
+### Outputs
+
+| Output | Description |
+
+| Pump | Water extraction |
+
+| Solenoid Valve | Tank filling |
+
+### Operation
+
+1. The START button enables the control system.
+2. The STOP button disables the entire system.
+3. When the water level is LOW:
+   - The pump is turned OFF.
+   - The solenoid valve is opened.
+4. When the water level is HIGH:
+   - The pump is allowed to operate.
+   - The solenoid valve is closed.
+5. If the system is disabled:
+   - Pump OFF.
+   - Solenoid valve OFF.
   
-### Project Structure
-- README.md
-- 
 ### Future Improvements
 
 - WiFi monitoring
